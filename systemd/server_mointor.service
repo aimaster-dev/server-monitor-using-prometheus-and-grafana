@@ -1,0 +1,12 @@
+[Unit]
+Description=Server Monitoring Script
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /path/to/your/server_monitor.py
+Restart=always
+User=nobody
+Group=nogroup
+
+[Install]
+WantedBy=multi-user.target
